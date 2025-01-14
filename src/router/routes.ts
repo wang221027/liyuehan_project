@@ -5,13 +5,26 @@ export const constantRoute = [
     name: "home",
     path: "/home",
     component: () => import("@/views/Home/index.vue"),
-    meta: { title: "首页" },
   },
   {
     name: "forum",
     path: "/forum",
     component: () => import("@/views/Forum/index.vue"),
-    meta: { title: "论坛" },
+  },
+  {
+    name: "news",
+    path: "/news",
+    component: () => import("@/views/News/index.vue"),
+  },
+  {
+    name: "PublishArticle",
+    path: "/PublishArticle",
+    component: () => import("@/views/PublishArticle/index.vue"),
+  },
+  {
+    name: "ArticleCover",
+    path: "/ArticleCover",
+    component: () => import("@/views/ArticleCover/index.vue"),
   },
   // 重定向，在项目跑起来的时候，访问/, 立马让他重定向到首页
   {
